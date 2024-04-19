@@ -5,7 +5,7 @@
 # allowing players to experience the uniqueness of your server.
 
 fishfinder:
-  material: PAPER
+  material: starsfish_fishfinder
   display:
     name: '<#1E90FF>Fish Finder'
     lore:
@@ -18,7 +18,6 @@ fishfinder:
       - '<gray> - familiar waters, this device ensures you''re'
       - '<gray> - always informed about your aquatic neighbors.'
       - ''
-  custom-model-data: 50000
   events:
     interact:
       conditional_action:

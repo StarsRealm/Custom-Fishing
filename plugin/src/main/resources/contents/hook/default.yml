@@ -5,7 +5,7 @@
 # allowing players to experience the uniqueness of your server.
 
 delicate_hook:
-  material: SHEARS
+  material: starsfish_delicate_hook
   display:
     name: '<#1E90FF>Delicate hook'
     lore:

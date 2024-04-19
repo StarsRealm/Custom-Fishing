@@ -81,10 +81,6 @@ public class IntegrationManagerImpl implements IntegrationManager {
             plugin.getItemManager().registerItemLibrary(new ZaphkielItemImpl());
             hookMessage("Zaphkiel");
         }
-        if (plugin.isHookedPluginEnabled("NeigeItems")) {
-            plugin.getItemManager().registerItemLibrary(new NeigeItemsItemImpl());
-            hookMessage("NeigeItems");
-        }
         if (Bukkit.getPluginManager().getPlugin("MythicMobs") != null) {
             plugin.getItemManager().registerItemLibrary(new MythicMobsItemImpl());
             plugin.getEntityManager().registerEntityLibrary(new MythicEntityImpl());

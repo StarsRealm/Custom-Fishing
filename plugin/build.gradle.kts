@@ -1,6 +1,35 @@
+plugins {
+    id("io.papermc.paperweight.userdev") version "1.5.11"
+    id("xyz.jpenilla.run-paper") version "2.2.3"
+}
+
+repositories {
+    maven {
+        name = "AliYun-Release"
+        url = uri("https://packages.aliyun.com/maven/repository/2421751-release-ZmwRAc/")
+        credentials {
+            username = project.findProperty("aliyun.package.user") as String? ?: System.getenv("ALY_USER")
+            password = project.findProperty("aliyun.package.password") as String? ?: System.getenv("ALY_PASSWORD")
+        }
+    }
+    maven {
+        name = "AliYun-Snapshot"
+        url = uri("https://packages.aliyun.com/maven/repository/2421751-snapshot-i7Aufp/")
+        credentials {
+            username = project.findProperty("aliyun.package.user") as String? ?: System.getenv("ALY_USER")
+            password = project.findProperty("aliyun.package.password") as String? ?: System.getenv("ALY_PASSWORD")
+        }
+    }
+    maven("https://repo.xenondevs.xyz/releases")
+}
+
+
 dependencies {
-    // server
-    compileOnly("dev.folia:folia-api:1.20.1-R0.1-SNAPSHOT")
+    paperweight.devBundle("com.starsrealm.nylon", "1.20.4-R0.2-SNAPSHOT")
+    compileOnly("com.starsrealm.starock:plugin:1.1.1-SNAPSHOT")
+    compileOnly("com.starsrealm.starock:api:1.1.1-SNAPSHOT")
+    compileOnly("xyz.xenondevs.invui:invui-core:1.25")
+    compileOnly("xyz.xenondevs.invui:inventory-access-r18:1.25")
 
     // packet
     compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")

@@ -20,7 +20,7 @@ BOOK:
             - 'This bait can only be used on <#7B68EE>Magical Fishing Rod'
 
 simple_bait:
-  material: paper
+  material: starsfish_simple_bait
   display:
     name: '<b><#00BFFF>Simple lures'
     lore:
@@ -41,7 +41,7 @@ simple_bait:
       value: -10
 
 magnetic_bait:
-  material: paper
+  material: starsfish_magnetic_bait
   display:
     name: '<b><red>Magn<blue>etic <gray>lures'
     lore:
@@ -67,7 +67,7 @@ magnetic_bait:
       value: 2
 
 wild_bait:
-  material: paper
+  material: starsfish_wild_bait
   display:
     name: '<b><#2E8B57>Wild lures'
     lore:
@@ -82,7 +82,6 @@ wild_bait:
       - '<gray> - Increase fishing difficulty'
       - '<gray> - Increase the size of fish caught'
       - ''
-  custom-model-data: 50003
   effects:
     effect_1:
       type: difficulty
