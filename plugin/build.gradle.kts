@@ -65,11 +65,11 @@ dependencies {
     compileOnly("com.willfp:libreforge:4.48.1")
 
     // database
-    compileOnly("org.xerial:sqlite-jdbc:3.45.1.0")
+    compileOnly("org.xerial:sqlite-jdbc:3.45.3.0")
     compileOnly("com.h2database:h2:2.2.224")
-    compileOnly("org.mongodb:mongodb-driver-sync:4.11.1")
+    compileOnly("org.mongodb:mongodb-driver-sync:5.0.1")
     compileOnly("com.zaxxer:HikariCP:5.0.1")
-    compileOnly("redis.clients:jedis:5.1.0")
+    compileOnly("redis.clients:jedis:5.1.2")
 
     // others
     compileOnly("com.github.LoneDev6:api-itemsadder:3.5.0c-r5")
@@ -82,7 +82,7 @@ dependencies {
     compileOnly("org.betonquest:betonquest:2.0.0")
     compileOnly("xyz.xenondevs.invui:invui:1.27")
     compileOnly("com.github.Xiao-MoMi:Custom-Crops:3.4.4.1")
-    implementation("com.github.Xiao-MoMi:BiomeAPI:0.3")
+    compileOnly("com.github.Xiao-MoMi:BiomeAPI:0.3")
 
     // local jars
     compileOnly(files("libs/AdvancedEnchantments-api.jar"))
@@ -99,8 +99,7 @@ dependencies {
     }
 
     // adventure
-    implementation("net.kyori:adventure-api:4.15.0")
-    implementation("net.kyori:adventure-platform-bukkit:4.3.2")
+    compileOnly("net.kyori:adventure-api:4.16.0")
 }
 
 tasks {
