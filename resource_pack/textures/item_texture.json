@@ -1,0 +1,376 @@
+{
+    "resource_pack_name": "starsfish",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "starsfish-magnetic_bait": {
+            "textures": {
+                "path": "textures/item/bait/magnetic_bait"
+            }
+        },
+        "starsfish-simple_bait": {
+            "textures": {
+                "path": "textures/item/bait/simple_bait"
+            }
+        },
+        "starsfish-wild_bait": {
+            "textures": {
+                "path": "textures/item/bait/wild_bait"
+            }
+        },
+        "starsfish-blue_jellyfish": {
+            "textures": {
+                "path": "textures/item/fish/blue_jellyfish"
+            }
+        },
+        "starsfish-blue_jellyfish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/blue_jellyfish_golden_star"
+            }
+        },
+        "starsfish-blue_jellyfish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/blue_jellyfish_silver_star"
+            }
+        },
+        "starsfish-carp_fish": {
+            "textures": {
+                "path": "textures/item/fish/carp_fish"
+            }
+        },
+        "starsfish-carp_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/carp_fish_golden_star"
+            }
+        },
+        "starsfish-carp_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/carp_fish_silver_star"
+            }
+        },
+        "starsfish-cat_fish": {
+            "textures": {
+                "path": "textures/item/fish/cat_fish"
+            }
+        },
+        "starsfish-cat_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/cat_fish_golden_star"
+            }
+        },
+        "starsfish-cat_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/cat_fish_silver_star"
+            }
+        },
+        "starsfish-golden_fish": {
+            "textures": {
+                "path": "textures/item/fish/golden_fish"
+            }
+        },
+        "starsfish-golden_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/golden_fish_golden_star"
+            }
+        },
+        "starsfish-golden_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/golden_fish_silver_star"
+            }
+        },
+        "starsfish-gold_fish": {
+            "textures": {
+                "path": "textures/item/fish/gold_fish"
+            }
+        },
+        "starsfish-gold_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/gold_fish_golden_star"
+            }
+        },
+        "starsfish-gold_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/gold_fish_silver_star"
+            }
+        },
+        "starsfish-mullet_fish": {
+            "textures": {
+                "path": "textures/item/fish/mullet_fish"
+            }
+        },
+        "starsfish-mullet_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/mullet_fish_golden_star"
+            }
+        },
+        "starsfish-mullet_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/mullet_fish_silver_star"
+            }
+        },
+        "starsfish-octopus_fish": {
+            "textures": {
+                "path": "textures/item/fish/octopus_fish"
+            }
+        },
+        "starsfish-octopus_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/octopus_fish_golden_star"
+            }
+        },
+        "starsfish-octopus_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/octopus_fish_silver_star"
+            }
+        },
+        "starsfish-perch_fish": {
+            "textures": {
+                "path": "textures/item/fish/perch_fish"
+            }
+        },
+        "starsfish-perch_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/perch_fish_golden_star"
+            }
+        },
+        "starsfish-perch_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/perch_fish_silver_star"
+            }
+        },
+        "starsfish-pike_fish": {
+            "textures": {
+                "path": "textures/item/fish/pike_fish"
+            }
+        },
+        "starsfish-pike_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/pike_fish_golden_star"
+            }
+        },
+        "starsfish-pike_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/pike_fish_silver_star"
+            }
+        },
+        "starsfish-pink_jellyfish": {
+            "textures": {
+                "path": "textures/item/fish/pink_jellyfish"
+            }
+        },
+        "starsfish-pink_jellyfish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/pink_jellyfish_golden_star"
+            }
+        },
+        "starsfish-pink_jellyfish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/pink_jellyfish_silver_star"
+            }
+        },
+        "starsfish-radioactive_fish": {
+            "textures": {
+                "path": "textures/item/fish/radioactive_fish"
+            }
+        },
+        "starsfish-rainbow_fish": {
+            "textures": {
+                "path": "textures/item/fish/rainbow_fish"
+            }
+        },
+        "starsfish-red_spnapper_fish": {
+            "textures": {
+                "path": "textures/item/fish/red_spnapper_fish"
+            }
+        },
+        "starsfish-red_spnapper_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/red_spnapper_fish_golden_star"
+            }
+        },
+        "starsfish-red_spnapper_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/red_spnapper_fish_silver_star"
+            }
+        },
+        "starsfish-salmon_void_fish": {
+            "textures": {
+                "path": "textures/item/fish/salmon_void_fish"
+            }
+        },
+        "starsfish-salmon_void_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/salmon_void_fish_golden_star"
+            }
+        },
+        "starsfish-salmon_void_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/salmon_void_fish_silver_star"
+            }
+        },
+        "starsfish-sardine_fish": {
+            "textures": {
+                "path": "textures/item/fish/sardine_fish"
+            }
+        },
+        "starsfish-sardine_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/sardine_fish_golden_star"
+            }
+        },
+        "starsfish-sardine_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/sardine_fish_silver_star"
+            }
+        },
+        "starsfish-sturgeon_fish": {
+            "textures": {
+                "path": "textures/item/fish/sturgeon_fish"
+            }
+        },
+        "starsfish-sturgeon_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/sturgeon_fish_golden_star"
+            }
+        },
+        "starsfish-sturgeon_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/sturgeon_fish_silver_star"
+            }
+        },
+        "starsfish-sunfish_fish": {
+            "textures": {
+                "path": "textures/item/fish/sunfish_fish"
+            }
+        },
+        "starsfish-sunfish_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/sunfish_fish_golden_star"
+            }
+        },
+        "starsfish-sunfish_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/sunfish_fish_silver_star"
+            }
+        },
+        "starsfish-tuna_fish": {
+            "textures": {
+                "path": "textures/item/fish/tuna_fish"
+            }
+        },
+        "starsfish-tuna_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/tuna_fish_golden_star"
+            }
+        },
+        "starsfish-tuna_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/tuna_fish_silver_star"
+            }
+        },
+        "starsfish-woodskip_fish": {
+            "textures": {
+                "path": "textures/item/fish/woodskip_fish"
+            }
+        },
+        "starsfish-woodskip_fish_golden_star": {
+            "textures": {
+                "path": "textures/item/fish/woodskip_fish_golden_star"
+            }
+        },
+        "starsfish-woodskip_fish_silver_star": {
+            "textures": {
+                "path": "textures/item/fish/woodskip_fish_silver_star"
+            }
+        },
+        "starsfish-delicate_hook": {
+            "textures": {
+                "path": "textures/item/hook/delicate_hook"
+            }
+        },
+        "starsfish-beginner_rod": {
+            "textures": {
+                "path": "textures/item/rod/beginner_rod"
+            }
+        },
+        "starsfish-beginner_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/beginner_rod_cast"
+            }
+        },
+        "starsfish-bone_rod": {
+            "textures": {
+                "path": "textures/item/rod/bone_rod"
+            }
+        },
+        "starsfish-bone_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/bone_rod_cast"
+            }
+        },
+        "starsfish-golden_rod": {
+            "textures": {
+                "path": "textures/item/rod/golden_rod"
+            }
+        },
+        "starsfish-golden_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/golden_rod_cast"
+            }
+        },
+        "starsfish-magical_rod": {
+            "textures": {
+                "path": "textures/item/rod/magical_rod"
+            }
+        },
+        "starsfish-magical_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/magical_rod_cast"
+            }
+        },
+        "starsfish-master_rod": {
+            "textures": {
+                "path": "textures/item/rod/master_rod"
+            }
+        },
+        "starsfish-master_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/master_rod_cast"
+            }
+        },
+        "starsfish-silver_rod": {
+            "textures": {
+                "path": "textures/item/rod/silver_rod"
+            }
+        },
+        "starsfish-silver_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/silver_rod_cast"
+            }
+        },
+        "starsfish-star_rod": {
+            "textures": {
+                "path": "textures/item/rod/star_rod"
+            }
+        },
+        "starsfish-star_rod_cast": {
+            "textures": {
+                "path": "textures/item/rod/star_rod_cast"
+            }
+        },
+        "starsfish-animated_splash": {
+            "textures": {
+                "path": "textures/item/util/animated_splash"
+            }
+        },
+        "starsfish-animated_splash_lava": {
+            "textures": {
+                "path": "textures/item/util/animated_splash_lava"
+            }
+        },
+        "starsfish-fishfinder": {
+            "textures": {
+                "path": "textures/item/util/fishfinder"
+            }
+        }
+    }
+}

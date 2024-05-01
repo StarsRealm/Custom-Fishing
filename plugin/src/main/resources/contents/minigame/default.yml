@@ -9,7 +9,7 @@ rainbow_1:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -28,7 +28,7 @@ rainbow_2:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -47,7 +47,7 @@ rainbow_3:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -66,7 +66,7 @@ rainbow_4:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -85,7 +85,7 @@ rainbow_5:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -104,7 +104,7 @@ rainbow_6:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -123,7 +123,7 @@ rainbow_7:
   subtitle:
     font: 'customfishing:default'
     bar: '뀋'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -119
     pointer-width: 5
@@ -147,7 +147,7 @@ accurate_click_bar_1_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀂'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -175,7 +175,7 @@ accurate_click_bar_1_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀂'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -203,7 +203,7 @@ accurate_click_bar_1_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀂'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -231,7 +231,7 @@ accurate_click_bar_2_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀃'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -259,7 +259,7 @@ accurate_click_bar_2_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀃'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -287,7 +287,7 @@ accurate_click_bar_2_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀃'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -315,7 +315,7 @@ accurate_click_bar_3_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀄'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -343,7 +343,7 @@ accurate_click_bar_3_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀄'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -371,7 +371,7 @@ accurate_click_bar_3_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀄'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -399,7 +399,7 @@ accurate_click_bar_4_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀅'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -438,7 +438,7 @@ accurate_click_bar_4_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀅'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -477,7 +477,7 @@ accurate_click_bar_4_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀅'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -516,7 +516,7 @@ accurate_click_bar_5_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀆'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -555,7 +555,7 @@ accurate_click_bar_5_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀆'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -594,7 +594,7 @@ accurate_click_bar_5_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀆'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -633,7 +633,7 @@ accurate_click_bar_6_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀇'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -672,7 +672,7 @@ accurate_click_bar_6_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀇'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -711,7 +711,7 @@ accurate_click_bar_6_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀇'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -750,7 +750,7 @@ accurate_click_bar_7_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀈'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -811,7 +811,7 @@ accurate_click_bar_7_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀈'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -872,7 +872,7 @@ accurate_click_bar_7_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀈'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -933,7 +933,7 @@ accurate_click_bar_8_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀉'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -994,7 +994,7 @@ accurate_click_bar_8_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀉'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -1055,7 +1055,7 @@ accurate_click_bar_8_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀉'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -1116,7 +1116,7 @@ accurate_click_bar_9_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀊'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -1177,7 +1177,7 @@ accurate_click_bar_9_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀊'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -1238,7 +1238,7 @@ accurate_click_bar_9_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀊'
-    pointer: '뀁'
+    pointer: '넀'
   arguments:
     pointer-offset: -183
     pointer-width: 5
@@ -1304,8 +1304,8 @@ hold_game_easy:
   subtitle:
     font: 'customfishing:default'
     bar: '뀌'
-    judgment-area: '뀒'
-    pointer: '뀁'
+    judgment-area: ''
+    pointer: '넀'
   arguments:
     punishment: 0.2
     bar-effective-area-width: 155
@@ -1340,8 +1340,8 @@ hold_game_normal:
   subtitle:
     font: 'customfishing:default'
     bar: '뀌'
-    judgment-area: '뀓'
-    pointer: '뀁'
+    judgment-area: ''
+    pointer: '넀'
   arguments:
     punishment: 0.2
     bar-effective-area-width: 155
@@ -1378,8 +1378,8 @@ hold_game_hard:
   subtitle:
     font: 'customfishing:default'
     bar: '뀌'
-    judgment-area: '뀔'
-    pointer: '뀁'
+    judgment-area: ''
+    pointer: '넀'
   arguments:
     punishment: 0.2
     bar-effective-area-width: 155
@@ -1422,13 +1422,13 @@ tension_game_easy:
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'
   subtitle:
     font: 'customfishing:default'
-    bar: '뀑'
-    fish: '뀍'
+    bar: '넛'
+    fish: '넂'
     struggling-fish:
-      - 뀎
-      - 뀏
-      - 뀎
-      - 뀐
+      - 넄
+      - 넃
+      - 넄
+      - 넅
   arguments:
     bar-effective-area-width: 218
     fish-offset: -221
@@ -1459,13 +1459,13 @@ tension_game_normal:
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'
   subtitle:
     font: 'customfishing:default'
-    bar: '뀑'
-    fish: '뀍'
+    bar: '넛'
+    fish: '넂'
     struggling-fish:
-      - 뀎
-      - 뀏
-      - 뀎
-      - 뀐
+      - 넄
+      - 넃
+      - 넄
+      - 넅
   arguments:
     bar-effective-area-width: 218
     fish-offset: -221
@@ -1496,13 +1496,13 @@ tension_game_hard:
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'
   subtitle:
     font: 'customfishing:default'
-    bar: '뀑'
-    fish: '뀍'
+    bar: '넛'
+    fish: '넂'
     struggling-fish:
-      - 뀎
-      - 뀏
-      - 뀎
-      - 뀐
+      - 넄
+      - 넃
+      - 넄
+      - 넅
   arguments:
     bar-effective-area-width: 218
     fish-offset: -221

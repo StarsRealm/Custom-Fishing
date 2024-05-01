@@ -1,0 +1,736 @@
+
+{
+  "namespace": "hud",
+  
+  "conditional_image": {
+    "type": "panel",
+    "controls": [
+      {
+        "rainbow_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar_rainbow",
+          "size": [240, 16],
+          "offset": [-3, 20],
+          "alpha": "@hud.anim_actionbar_text_alpha_out",
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub110') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+        
+      {
+        "1_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar1",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub111') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        
+        }
+      },
+        
+      
+      {
+        "2_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar2",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub112') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+       
+      {
+        "3_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar3",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub113') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+       
+      {
+        "4_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar4",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub114') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "5_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar5",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub115') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "6_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar6",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub116') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "7_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar7",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub117') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "8_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar8",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub118') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+        
+      {
+        "9_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar9",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-4, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub119') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "10_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar10",
+          "size": [368, 16],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [-3, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub11a') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "11_bar": {
+          "type": "image",
+          "texture": "textures/ui/fishingbar/bar11",
+          "size": [333, 30],
+          "offset": [0, 20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub11b') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+      
+      {
+        "progress_1": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_1",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub110') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+        
+      {
+        "progress_2": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_2",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub111') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        
+        }
+      },
+        
+      
+      {
+        "progress_3": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_3",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub112') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+       
+      {
+        "progress_4": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_4",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub113') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+       
+      {
+        "progress_5": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_5",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub114') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "progress_6": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_6",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub115') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "progress_7": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_7",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub116') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "progress_8": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_8",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub117') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "progress_9": {
+          "type": "image",
+          "texture": "textures/ui/icons/progress_9",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub118') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+      {
+        "strain_1": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_1",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub119') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      },
+        
+      {
+        "strain_2": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_2",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11a') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        
+        }
+      },
+        
+      
+      {
+        "strain_3": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_3",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11b') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+       
+      {
+        "strain_4": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_4",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11c') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+       
+      {
+        "strain_5": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_5",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11d') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "strain_6": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_6",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11e') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "strain_7": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_7",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub11f') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "strain_8": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_8",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub120') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+        
+      {
+        "strain_9": {
+          "type": "image",
+          "texture": "textures/ui/icons/strain_9",
+          "size": [48, 48],
+          "alpha": "@hud.anim_actionbar_text_alpha_out", 
+          "offset": [0,-20],
+          "layer": 10,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_title_text_string - '\ub121') = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        
+        }
+      }
+        
+      
+    ]
+  },
+  "fishing_factory": {
+    "type": "panel",
+    "factory": {
+      "name": "hud_title_text_factory",
+      "control_ids": {
+        "hud_title_text": "conditional_image@hud.conditional_image"
+        
+      }
+    }
+  },
+  "little_bar_image": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "layer": 1,
+    "propagate_alpha": true,
+    "$atext": "$actionbar_text",
+    "visible": "(not (($atext - 'customfishing:little_bar') = $atext))",
+    "$offset": [ 0, 2 ],
+    "offset": "$offset",
+    "controls": [
+      {
+        "subtitle_frame": {
+          "type": "panel",
+          "size": [ "100%", "100%cm" ],
+          "controls": [
+            {
+              "subtitle": {
+                "type": "label",
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "text": "($atext - 'customfishing:little_bar:')",
+                "layer": 31,
+                "localize": false,
+                "font_scale_factor": 2.2,
+                "text_alignment": "center",
+                "offset": [ 1, 19.5 ],
+                "alpha": "@hud.anim_actionbar_text_alpha_out"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  
+
+  "little_bar_image_factory": {
+    "type": "panel",
+    "factory": {
+      "name": "hud_actionbar_text_factory",
+      "control_ids": {
+        "hud_actionbar_text": "little_bar_image@hud.little_bar_image"
+      }
+    }
+  },
+  
+  "hud_actionbar_text/actionbar_message": {
+    "$atext": "$actionbar_text",
+    "visible": "(($atext - 'customfishing:little_bar') = $atext)"
+  },
+
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+          "little_bar_image_factory@hud.little_bar_image_factory": {}
+          },
+          {
+          "fishing_factory@fishing_factory": {}
+          }
+        ]
+      }
+    ]
+  }
+}

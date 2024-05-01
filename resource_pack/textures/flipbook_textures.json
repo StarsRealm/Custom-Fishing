@@ -1,0 +1,12 @@
+[
+  {
+    "flipbook_texture": "textures/item/animated_splash",
+    "atlas_tile": "starsfish-animated_splash",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/item/animated_splash_lava",
+    "atlas_tile": "starsfish-animated_splash_lava",
+    "ticks_per_frame": 10
+  }
+]
