@@ -11,7 +11,7 @@
 #   MariaDB (preferred over MySQL)
 #   MongoDB
 #
-data-storage-method: H2
+data-storage-method: JSON
 
 SQLite:
   file: 'sqlite'

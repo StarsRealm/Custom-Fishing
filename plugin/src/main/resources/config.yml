@@ -5,12 +5,6 @@ config-version: '32'
 # Debug
 debug: false
 
-# BStats
-metrics: true
-
-# Check updates
-update-checker: true
-
 # Language
 # https://github.com/Xiao-MoMi/Custom-Fishing/tree/main/plugin/src/main/resources/messages
 lang: en

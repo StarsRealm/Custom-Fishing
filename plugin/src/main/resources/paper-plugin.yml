@@ -1,32 +1,42 @@
 name: CustomFishing
 version: '${version}'
 main: net.momirealms.customfishing.CustomFishingPluginImpl
-bootstrap: com.starsrealm.customfishing.CustomFishingBootstrap
-api-version: 1.17
+bootstrapper: com.starsrealm.customfishing.CustomFishingBootstrap
+loader: com.starsrealm.customfishing.CustomFishingLoader
+api-version: "1.20"
 authors: [ XiaoMoMi, Simple ]
 folia-supported: true
-depend:
-  - ProtocolLib
-softdepend:
-  - Vault
-  - PlaceholderAPI
-  - RealisticSeasons
-  - ItemsAdder
-  - MythicMobs
-  - Oraxen
-  - MMOItems
-  - mcMMO
-  - AureliumSkills
-  - AuraSkills
-  - CustomCrops
-  - MMOCore
-  - EcoSkills
-  - BattlePass
-  - ClueScrolls
-  - BetonQuest
-  - AdvancedEnchantments
-  - EcoJobs
-  - Zaphkiel
+dependencies:
+  bootstrap:
+    Starock:
+      load: BEFORE
+      required: true
+      join-classpath: true
+  server:
+    Starock:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    ProtocolLib:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    Vault:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    PlaceholderAPI:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    MythicMobs:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    BetonQuest:
+      load: BEFORE
+      required: false
+      join-classpath: true
 permissions:
   fishingbag.user:
     default: true

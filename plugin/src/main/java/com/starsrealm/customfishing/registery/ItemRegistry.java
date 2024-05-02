@@ -7,6 +7,7 @@ import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 
 public final class ItemRegistry {
+
     private ItemRegistry() {
 
     }
@@ -96,10 +97,6 @@ public final class ItemRegistry {
     public static final Item PINK_JELLYFISH = registerFish("pink_jellyfish");
     public static final Item PINK_JELLYFISH_SILVER_STAR = registerFish("pink_jellyfish_silver_star");
     public static final Item PINK_JELLYFISH_GOLDEN_STAR = registerFish("pink_jellyfish_golden_star");
-
-
-
-
 
     private static Item registerFish(String path) {
         return BukkitRegistry.register(new Item(FISH_PROPERTIES), new ResourceLocation("starsfish", path), EASY_BUILD);

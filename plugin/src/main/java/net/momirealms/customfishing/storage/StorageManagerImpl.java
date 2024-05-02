@@ -33,10 +33,8 @@ import net.momirealms.customfishing.api.util.LogUtils;
 import net.momirealms.customfishing.setting.CFConfig;
 import net.momirealms.customfishing.storage.method.database.nosql.MongoDBImpl;
 import net.momirealms.customfishing.storage.method.database.nosql.RedisManager;
-import net.momirealms.customfishing.storage.method.database.sql.H2Impl;
 import net.momirealms.customfishing.storage.method.database.sql.MariaDBImpl;
 import net.momirealms.customfishing.storage.method.database.sql.MySQLImpl;
-import net.momirealms.customfishing.storage.method.database.sql.SQLiteImpl;
 import net.momirealms.customfishing.storage.method.file.JsonImpl;
 import net.momirealms.customfishing.storage.method.file.YAMLImpl;
 import net.momirealms.customfishing.storage.user.OfflineUserImpl;
@@ -99,10 +97,8 @@ public class StorageManagerImpl implements StorageManager, Listener {
             if (this.dataSource != null) this.dataSource.disable();
             this.previousType = storageType;
             switch (storageType) {
-                case H2 -> this.dataSource = new H2Impl(plugin);
                 case JSON -> this.dataSource = new JsonImpl(plugin);
                 case YAML -> this.dataSource = new YAMLImpl(plugin);
-                case SQLite -> this.dataSource = new SQLiteImpl(plugin);
                 case MySQL -> this.dataSource = new MySQLImpl(plugin);
                 case MariaDB -> this.dataSource = new MariaDBImpl(plugin);
                 case MongoDB -> this.dataSource = new MongoDBImpl(plugin);

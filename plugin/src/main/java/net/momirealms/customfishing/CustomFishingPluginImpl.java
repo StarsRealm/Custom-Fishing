@@ -31,10 +31,6 @@ import net.momirealms.customfishing.api.util.ReflectionUtils;
 import net.momirealms.customfishing.command.CommandManagerImpl;
 import net.momirealms.customfishing.compatibility.IntegrationManagerImpl;
 import net.momirealms.customfishing.compatibility.papi.PlaceholderManagerImpl;
-import net.momirealms.customfishing.libraries.classpath.ReflectionClassPathAppender;
-import net.momirealms.customfishing.libraries.dependencies.Dependency;
-import net.momirealms.customfishing.libraries.dependencies.DependencyManager;
-import net.momirealms.customfishing.libraries.dependencies.DependencyManagerImpl;
 import net.momirealms.customfishing.mechanic.action.ActionManagerImpl;
 import net.momirealms.customfishing.mechanic.bag.BagManagerImpl;
 import net.momirealms.customfishing.mechanic.block.BlockManagerImpl;
@@ -57,7 +53,6 @@ import net.momirealms.customfishing.setting.CFConfig;
 import net.momirealms.customfishing.setting.CFLocale;
 import net.momirealms.customfishing.storage.StorageManagerImpl;
 import net.momirealms.customfishing.version.VersionManagerImpl;
-import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -75,43 +70,9 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
     private static ProtocolManager protocolManager;
     private CoolDownManager coolDownManager;
     private ChatCatcherManager chatCatcherManager;
-    private DependencyManager dependencyManager;
 
     public CustomFishingPluginImpl() {
         super();
-    }
-
-    @Override
-    public void onLoad() {
-        this.dependencyManager = new DependencyManagerImpl(this, new ReflectionClassPathAppender(this.getClassLoader()));
-        this.dependencyManager.loadDependencies(new ArrayList<>(
-                List.of(
-                        Dependency.GSON,
-                        Dependency.SLF4J_API,
-                        Dependency.SLF4J_SIMPLE,
-                        Dependency.COMMAND_API,
-                        Dependency.BOOSTED_YAML,
-                        Dependency.ADVENTURE_BUNDLE,
-                        Dependency.BIOME_API,
-                        Dependency.NBT_API,
-                        Dependency.EXP4J,
-                        Dependency.MYSQL_DRIVER,
-                        Dependency.MARIADB_DRIVER,
-                        Dependency.MONGODB_DRIVER_SYNC,
-                        Dependency.MONGODB_DRIVER_CORE,
-                        Dependency.MONGODB_DRIVER_BSON,
-                        Dependency.JEDIS,
-                        Dependency.COMMONS_POOL_2,
-                        Dependency.H2_DRIVER,
-                        Dependency.SQLITE_DRIVER,
-                        Dependency.BSTATS_BASE,
-                        Dependency.HIKARI,
-                        Dependency.BSTATS_BUKKIT,
-                        Dependency.INV_UI,
-                        Dependency.INV_UI_ACCESS,
-                        Dependency.INV_UI_NMS
-                )
-        ));
     }
 
     @Override
@@ -146,13 +107,6 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
         this.chatCatcherManager = new ChatCatcherManager(this);
         this.reload();
         super.initialized = true;
-
-        if (CFConfig.metrics) new Metrics(this, 16648);
-        if (CFConfig.updateChecker)
-            this.versionManager.checkUpdate().thenAccept(result -> {
-                if (!result) this.getAdventure().sendConsoleMessage("[CustomFishing] You are using the latest version.");
-                else this.getAdventure().sendConsoleMessage("[CustomFishing] Update is available: <u>https://polymart.org/resource/2723<!u>");
-            });
     }
 
     @Override
@@ -324,9 +278,6 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
         return chatCatcherManager;
     }
 
-    public DependencyManager getDependencyManager() {
-        return dependencyManager;
-    }
 
     /**
      * Retrieves the ProtocolManager instance used for managing packets.

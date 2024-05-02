@@ -46,12 +46,12 @@ Afdian: https://afdian.net/@xiaomomi
 ```
 ```
 <dependencies>
-  <dependency>
+  <customFishingDependency>
     <groupId>com.github.Xiao-MoMi</groupId>
     <artifactId>Custom-Fishing</artifactId>
     <version>{LATEST}</version>
     <scope>provided</scope>
-  </dependency>
+  </customFishingDependency>
 </dependencies>
 ```
 ### Gradle (Groovy)

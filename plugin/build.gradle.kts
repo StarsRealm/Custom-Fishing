@@ -31,6 +31,9 @@ dependencies {
     compileOnly("xyz.xenondevs.invui:invui-core:1.25")
     compileOnly("xyz.xenondevs.invui:inventory-access-r18:1.25")
 
+
+    compileOnly("dev.folia:folia-api:1.20.1-R0.1-SNAPSHOT")
+
     // packet
     compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")
 
@@ -100,24 +103,4 @@ dependencies {
 
     // adventure
     compileOnly("net.kyori:adventure-api:4.16.0")
-}
-
-tasks {
-    shadowJar {
-        relocate ("org.apache.commons.pool2", "net.momirealms.customfishing.libraries.commonspool2")
-        relocate ("com.mysql", "net.momirealms.customfishing.libraries.mysql")
-        relocate ("org.mariadb", "net.momirealms.customfishing.libraries.mariadb")
-        relocate ("com.zaxxer.hikari", "net.momirealms.customfishing.libraries.hikari")
-        relocate ("redis.clients.jedis", "net.momirealms.customfishing.libraries.jedis")
-        relocate ("com.mongodb", "net.momirealms.customfishing.libraries.mongodb")
-        relocate ("org.bson", "net.momirealms.customfishing.libraries.bson")
-        relocate ("net.objecthunter.exp4j", "net.momirealms.customfishing.libraries.exp4j")
-        relocate ("de.tr7zw.changeme", "net.momirealms.customfishing.libraries.changeme")
-        relocate ("net.kyori", "net.momirealms.customfishing.libraries")
-        relocate ("dev.jorel.commandapi", "net.momirealms.customfishing.libraries.commandapi")
-        relocate ("dev.dejvokep.boostedyaml", "net.momirealms.customfishing.libraries.boostedyaml")
-        relocate ("org.bstats", "net.momirealms.customfishing.libraries.bstats")
-        relocate ("net.momirealms.biomeapi", "net.momirealms.customfishing.libraries.biomeapi")
-        relocate ("xyz.xenondevs", "net.momirealms.customfishing.libraries")
-    }
 }
