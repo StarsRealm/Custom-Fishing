@@ -390,13 +390,10 @@ public class GameManagerImpl implements GameManager {
                 }
 
                 public void showUI() {
-                    String bar = FontUtils.surroundWithFont(barImage, font)
-                            + OffsetUtils.getOffsetChars((int) (judgementAreaOffset + judgement_position))
-                            + FontUtils.surroundWithFont(judgementAreaImage, font)
-                            + OffsetUtils.getOffsetChars((int) (barEffectiveWidth - judgement_position - judgementAreaWidth))
-                            + OffsetUtils.getOffsetChars((int) (-barEffectiveWidth - 1 + fish_position))
-                            + FontUtils.surroundWithFont(pointerImage, font)
-                            + OffsetUtils.getOffsetChars((int) (barEffectiveWidth - fish_position - pointerIconWidth + 1));
+                    int result1 = (int) ((((fish_position + 0.25) / 1.506)) * 100);
+                    int result2 = (int)  ((((judgement_position + 0.25) / 1.506)) * 100);
+                    String bar = String.format("%05d%05d", result1, result2) + barImage;
+                    CustomFishingPlugin.get().debug(bar);
                     AdventureManagerImpl.getInstance().sendTitle(
                             player,
                             tip != null && !played ? tip : title.replace("{progress}", progress[(int) ((hold_time / time_requirement) * progress.length)]),

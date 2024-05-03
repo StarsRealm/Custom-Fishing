@@ -1,10 +1,74 @@
 
 {
   "namespace": "hud",
-  
+
   "conditional_image": {
     "type": "panel",
     "controls": [
+      {
+        "fishslider": {
+          "type": "slider",
+          "layer": 1,
+          "enable": false,
+          "always_listen_to_input": false,
+          "always_handle_pointer": true,
+          "slider_box_control": "slider_box",
+          "size" : [ 300, 16 ],
+          "$slider_box_layout|default": "hud.fish_button",
+          "$slider_box_hover_layout|default": "hud.fish_button",
+          "$slider_box_locked_layout|default": "hud.fish_button",
+          "$slider_box_indent_layout|default": "hud.fish_button",
+          "$slider_box_size|default": [ 10, 16 ],
+
+          "$slider_track_button|default": "button.slider_skip_track",
+          "$slider_direction|default": "horizontal",
+          "$slider_steps|default": 1,
+          "$slider_collection_name|default": "",
+
+          "slider_direction": "$slider_direction",
+          "slider_steps": "$slider_steps",
+
+          "$slider_header_collection_name": "",
+
+          "default_control": "slider_bar_default",
+          "hover_control": "slider_bar_hover",
+          "$max_progress": 10000.0,
+          "controls": [
+            {
+              "slider_box@common.slider_box": {
+                "$slider_box_layout": "$slider_box_layout",
+                "$slider_box_size": "$slider_box_size",
+                "$slider_track_button": "$slider_name"
+              }
+            }
+          ],
+          "property_bag": {
+            "#slider_steps": 1
+          },
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#hud_subtitle_text_string - '\ub11a') = #hud_subtitle_text_string))",
+              "target_property_name": "#visible"
+            },
+            {
+              "binding_type": "view",
+              "binding_condition": "#visible",
+              "source_property_name": "('%.1s' * #hud_subtitle_text_string)",
+              "target_property_name": "#slider_value"
+            },
+            {
+              "binding_type": "view",
+              "binding_condition": "#visible",
+              "source_property_name": "((('%.5s' * #hud_subtitle_text_string) * 1) / $max_progress)",
+              "target_property_name": "#slider_value"
+            }
+          ]
+        }
+      },
       {
         "bar": {
           "type": "image",
@@ -46,7 +110,7 @@
         
         }
       },
-        
+
       {
         "progress_2": {
           "type": "image",
@@ -65,12 +129,10 @@
               "target_property_name": "#visible"
             }
           ]
-        
-        
+
+
         }
       },
-        
-      
       {
         "progress_3": {
           "type": "image",
@@ -227,71 +289,18 @@
       "name": "hud_title_text_factory",
       "control_ids": {
         "hud_title_text": "conditional_image@hud.conditional_image"
-        
       }
     }
   },
-  "little_bar_image": {
-    "type": "stack_panel",
-    "orientation": "vertical",
-    "layer": 1,
-    "propagate_alpha": true,
-    "$atext": "$actionbar_text",
-    "visible": "(not (($atext - 'customfishing:little_bar') = $atext))",
-    "$offset": [ 0, 2 ],
-    "offset": "$offset",
-    "controls": [
-      {
-        "subtitle_frame": {
-          "type": "panel",
-          "size": [ "100%", "100%cm" ],
-          "controls": [
-            {
-              "subtitle": {
-                "type": "label",
-                "anchor_from": "top_middle",
-                "anchor_to": "top_middle",
-                "text": "($atext - 'customfishing:little_bar:')",
-                "layer": 31,
-                "localize": false,
-                "font_scale_factor": 2.2,
-                "text_alignment": "center",
-                "offset": [ 1, 19.5 ],
-                "alpha": "@hud.anim_actionbar_text_alpha_out"
-              }
-            }
-          ]
-        }
-      }
-    ]
+  "fish_button@common.slider_button_state": {
+    "texture": "textures/ui/fishingbar/fish_icon"
   },
-  
-  
-
-  "little_bar_image_factory": {
-    "type": "panel",
-    "factory": {
-      "name": "hud_actionbar_text_factory",
-      "control_ids": {
-        "hud_actionbar_text": "little_bar_image@hud.little_bar_image"
-      }
-    }
-  },
-  
-  "hud_actionbar_text/actionbar_message": {
-    "$atext": "$actionbar_text",
-    "visible": "(($atext - 'customfishing:little_bar') = $atext)"
-  },
-
   "root_panel": {
     "modifications": [
       {
         "array_name": "controls",
         "operation": "insert_front",
         "value": [
-          {
-          "little_bar_image_factory@hud.little_bar_image_factory": {}
-          },
           {
           "fishing_factory@fishing_factory": {}
           }
