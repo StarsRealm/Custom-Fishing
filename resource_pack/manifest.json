@@ -4,14 +4,14 @@
     "name": "Stars Fish",
     "description": "StarsRealm Fishing resource",
     "uuid": "E85597AA-0C91-8FA6-6ECE-A5514EB4DF3F",
-    "version": [0, 10, 90]
+    "version": [0, 10, 161]
   },
   "modules": [
     {
       "type": "resources",
       "description": "Made in zimzaza4, Simple",
       "uuid": "77AE748E-2CA3-CB00-2F93-48CD4A7EDCD5",
-      "version": [0, 10, 90]
+      "version": [0, 10, 161]
     }
   ]
 }
