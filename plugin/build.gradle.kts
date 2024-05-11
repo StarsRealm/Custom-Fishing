@@ -1,6 +1,6 @@
 plugins {
-    id("io.papermc.paperweight.userdev") version "1.5.11"
-    id("xyz.jpenilla.run-paper") version "2.2.3"
+    id("io.papermc.paperweight.userdev") version "1.6.3"
+    id("xyz.jpenilla.run-paper") version "2.2.4"
 }
 
 repositories {
@@ -21,13 +21,14 @@ repositories {
         }
     }
     maven("https://repo.xenondevs.xyz/releases")
+    maven("https://repo.kryptonmc.org/releases")
 }
 
 
 dependencies {
-    paperweight.devBundle("com.starsrealm.nylon", "1.20.4-R0.2-SNAPSHOT")
-    compileOnly("com.starsrealm.starock:plugin:1.1.1-SNAPSHOT")
-    compileOnly("com.starsrealm.starock:api:1.1.1-SNAPSHOT")
+    paperweight.devBundle("com.starsrealm.nylon", "1.20.6-R0.3-STARSREALM-SNAPSHOT")
+    compileOnly("com.starsrealm.starock:plugin:1.4.0-SNAPSHOT")
+    compileOnly("com.starsrealm.starock:api:1.4.0-SNAPSHOT")
     compileOnly("xyz.xenondevs.invui:invui-core:1.25")
     compileOnly("xyz.xenondevs.invui:inventory-access-r18:1.25")
 
