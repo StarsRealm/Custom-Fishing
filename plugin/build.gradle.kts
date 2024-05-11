@@ -29,9 +29,6 @@ dependencies {
     paperweight.devBundle("com.starsrealm.nylon", "1.20.6-R0.3-STARSREALM-SNAPSHOT")
     compileOnly("com.starsrealm.starock:plugin:1.4.0-SNAPSHOT")
     compileOnly("com.starsrealm.starock:api:1.4.0-SNAPSHOT")
-    compileOnly("xyz.xenondevs.invui:invui-core:1.25")
-    compileOnly("xyz.xenondevs.invui:inventory-access-r18:1.25")
-
 
     compileOnly("dev.folia:folia-api:1.20.1-R0.1-SNAPSHOT")
 
@@ -39,10 +36,7 @@ dependencies {
     compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")
 
     // command
-    compileOnly("dev.jorel:commandapi-bukkit-core:9.3.0")
-
-    // nbt
-    compileOnly("de.tr7zw:item-nbt-api:2.12.3")
+    compileOnly("dev.jorel:commandapi-bukkit-core:9.4.1")
 
     // bStats
     compileOnly("org.bstats:bstats-bukkit:3.0.2")
@@ -84,9 +78,8 @@ dependencies {
     compileOnly("dev.aurelium:auraskills-api-bukkit:2.0.0-SNAPSHOT")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7")
     compileOnly("org.betonquest:betonquest:2.0.0")
-    compileOnly("xyz.xenondevs.invui:invui:1.27")
     compileOnly("com.github.Xiao-MoMi:Custom-Crops:3.4.4.1")
-    compileOnly("com.github.Xiao-MoMi:BiomeAPI:0.3")
+    compileOnly("org.apache.commons:commons-lang3:3.14.0")
 
     // local jars
     compileOnly(files("libs/AdvancedEnchantments-api.jar"))
@@ -97,11 +90,25 @@ dependencies {
     compileOnly(files("libs/notquests-5.17.1.jar"))
     compileOnly(files("libs/zaphkiel-2.0.24.jar"))
 
-    // api module
-    implementation(project(":api")) {
-        exclude("de.tr7zw")
+    // GUI
+    implementation("xyz.xenondevs.invui:invui:1.30") {
+        exclude("org.jetbrains", "annotations")
     }
 
+    // nbt
+    implementation("de.tr7zw:item-nbt-api:2.12.4")
+
+    // api module
+    implementation(project(":api"))
+
+    // sparrow heart
+    implementation("com.github.Xiao-MoMi:Sparrow-Heart:0.16")
+
     // adventure
-    compileOnly("net.kyori:adventure-api:4.16.0")
+    implementation("net.kyori:adventure-api:4.17.0")
+    implementation("net.kyori:adventure-text-minimessage:4.17.0")
+    implementation("net.kyori:adventure-text-serializer-gson:4.17.0") {
+        exclude("com.google.code.gson", "gson")
+    }
+    implementation("net.kyori:adventure-platform-bukkit:4.3.2")
 }

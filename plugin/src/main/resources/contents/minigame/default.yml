@@ -6,7 +6,7 @@
 hold_game_easy:
   game-type: hold
   difficulty: 15~35
-  time: 15
+  time: 30
   title: '{progress}'
   # Tip would show on the title to guide the player how to play
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'
@@ -42,7 +42,7 @@ hold_game_easy:
 hold_game_normal:
   game-type: hold
   difficulty: 35~60
-  time: 15
+  time: 30
   title: '{progress}'
   # Tip would show on the title to guide the player how to play
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'
@@ -80,7 +80,7 @@ hold_game_normal:
 hold_game_hard:
   game-type: hold
   difficulty: 60~90
-  time: 15
+  time: 30
   title: '{progress}'
   # Tip would show on the title to guide the player how to play
   tip: '<gray>Press <red><key:key.sneak> <gray>to start'

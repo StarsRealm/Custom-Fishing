@@ -21,9 +21,7 @@ import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
 import com.comphenix.protocol.events.PacketContainer;
-import de.tr7zw.changeme.nbtapi.utils.MinecraftVersion;
-import de.tr7zw.changeme.nbtapi.utils.VersionChecker;
-import net.momirealms.customfishing.adventure.AdventureManagerImpl;
+import net.momirealms.customfishing.adventure.AdventureHelper;
 import net.momirealms.customfishing.api.CustomFishingPlugin;
 import net.momirealms.customfishing.api.event.CustomFishingReloadEvent;
 import net.momirealms.customfishing.api.util.LogUtils;
@@ -52,6 +50,7 @@ import net.momirealms.customfishing.scheduler.SchedulerImpl;
 import net.momirealms.customfishing.setting.CFConfig;
 import net.momirealms.customfishing.setting.CFLocale;
 import net.momirealms.customfishing.storage.StorageManagerImpl;
+import net.momirealms.customfishing.util.NBTUtils;
 import net.momirealms.customfishing.version.VersionManagerImpl;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -60,7 +59,6 @@ import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -78,12 +76,12 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
     @Override
     public void onEnable() {
         protocolManager = ProtocolLibrary.getProtocolManager();
-        this.versionManager = new VersionManagerImpl(this);
-        this.disableNBTAPILogs();
+
+        NBTUtils.disableNBTAPILogs();
         ReflectionUtils.load();
 
         this.actionManager = new ActionManagerImpl(this);
-        this.adventure = new AdventureManagerImpl(this);
+        this.adventure = new AdventureHelper(this);
         this.bagManager = new BagManagerImpl(this);
         this.blockManager = new BlockManagerImpl(this);
         this.commandManager = new CommandManagerImpl(this);
@@ -111,7 +109,7 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
 
     @Override
     public void onDisable() {
-        if (this.adventure != null) ((AdventureManagerImpl) this.adventure).close();
+        if (this.adventure != null) ((AdventureHelper) this.adventure).close();
         if (this.bagManager != null) ((BagManagerImpl) this.bagManager).disable();
         if (this.blockManager != null) ((BlockManagerImpl) this.blockManager).disable();
         if (this.effectManager != null) ((EffectManagerImpl) this.effectManager).disable();
@@ -187,42 +185,6 @@ public class CustomFishingPluginImpl extends CustomFishingPlugin {
 
         CustomFishingReloadEvent event = new CustomFishingReloadEvent(this);
         Bukkit.getPluginManager().callEvent(event);
-    }
-
-    /**
-     * Disable NBT API logs
-     */
-    private void disableNBTAPILogs() {
-        MinecraftVersion.disableBStats();
-        MinecraftVersion.disableUpdateCheck();
-        VersionChecker.hideOk = true;
-        try {
-            Field field = MinecraftVersion.class.getDeclaredField("version");
-            field.setAccessible(true);
-            MinecraftVersion minecraftVersion;
-            try {
-                minecraftVersion = MinecraftVersion.valueOf(getVersionManager().getServerVersion().replace("v", "MC"));
-            } catch (IllegalArgumentException ex) {
-                minecraftVersion = MinecraftVersion.UNKNOWN;
-            }
-            field.set(MinecraftVersion.class, minecraftVersion);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-        boolean hasGsonSupport;
-        try {
-            Class.forName("com.google.gson.Gson");
-            hasGsonSupport = true;
-        } catch (Exception ex) {
-            hasGsonSupport = false;
-        }
-        try {
-            Field field= MinecraftVersion.class.getDeclaredField("hasGsonSupport");
-            field.setAccessible(true);
-            field.set(Boolean.class, hasGsonSupport);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     /**
